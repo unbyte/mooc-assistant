@@ -1,0 +1,26 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "chrome": "49",
+          "firefox": "52",
+          "opera": "36",
+          "edge": "79"
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    ["@babel/plugin-transform-destructuring", { "useBuiltIns": true }],
+    ["@babel/plugin-proposal-object-rest-spread", { "useBuiltIns": true }],
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "helpers": false,
+        "regenerator": true
+      }
+    ]
+  ]
+}

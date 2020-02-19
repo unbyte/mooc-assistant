@@ -1,0 +1,95 @@
+@import "../../styles/color";
+
+#mooc-assistant {
+  box-sizing: border-box;
+  width: 300px;
+  position: fixed;
+  transform: translate3d(100%, 0px, 0px);
+  z-index: 1000000001;
+  top: 0 !important;
+  bottom: 0 !important;
+  right: 0 !important;
+  overflow: visible;
+  transition: transform 0.3s ease-in 0s;
+  user-select: none;
+  font-family: "lucida grande", "lucida sans unicode", lucida, helvetica,
+  "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  display: flex;
+  flex-direction: column;
+
+  &.show {
+    transform: translate3d(0px, 0px, 0px);
+    transition: transform 0.2s ease 0s;
+  }
+
+  #mooc-assistant-toggle {
+    height: 94px;
+    width: 43px;
+    position: absolute;
+    top: 33%;
+    left: -43px;
+
+    background: @white-f9;
+    box-shadow: @grey-d8 -2px 0 5px 0;
+
+    text-align: center;
+    z-index: 1000000000;
+    cursor: pointer;
+
+    border-radius: 4px 0 0 4px;
+    border: 1px solid @grey-d8;
+    border-image: initial;
+    border-left: none;
+
+    transition: right 0.25s ease-in 0.2s;
+
+    span {
+      position: relative;
+      display: inline-block;
+      color: @grey;
+      left: -1px;
+      top: 10px;
+      line-height: 14px;
+      writing-mode: vertical-lr;
+      font-size: 14px;
+      letter-spacing: 6px;
+    }
+  }
+
+  #mooc-assistant-body {
+    z-index: 1000000001;
+    background: @white-f9;
+    border-left: 1px solid @grey-d8;
+    width: 100%;
+    flex: 1;
+    overflow: hidden;
+  }
+
+  textarea {
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+      width: 3px;
+      background: @white-ef;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: @grey;
+      border-radius: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      border-radius: 6px;
+    }
+
+    &::selection {
+      background: @grey-d8;
+    }
+  }
+
+  textarea, input, input::placeholder, input + label {
+    font-family: "lucida grande", "lucida sans unicode", lucida, helvetica,
+    "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  }
+}

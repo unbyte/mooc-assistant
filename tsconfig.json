@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "allowJs": true,
+    "target": "es5",
+    "module": "esnext",
+    "jsx": "react",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "removeComments": true,
+    "noEmit": true,
+    "noEmitOnError": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "useDefineForClassFields": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "declaration": true,
+    "pretty": true,
+    "newLine": "lf",
+    "stripInternal": true,
+    "noUnusedLocals": true
+  },
+  "include": [
+    "changelog",
+    "src/**/*",
+    "src/manifest.js"
+  ],
+  "exclude": ["node_modules"],
+  "awesomeTypescriptLoaderOptions": {
+    "useBabel": true,
+    "babelCore": "@babel/core",
+    "useCache": true
+  }
+}

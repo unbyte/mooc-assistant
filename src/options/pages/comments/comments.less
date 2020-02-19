@@ -1,0 +1,129 @@
+@import "../../../styles/color";
+
+#comment-page {
+  display: flex;
+
+  #comment-list {
+    width: 600px;
+    min-width: 500px;
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 18px;
+
+      span{
+        font-size: 16px;
+      }
+    }
+
+    ul {
+      border: 1px solid @grey-d8;
+
+
+      span {
+        display: inline-block;
+        cursor: pointer;
+        border-radius: 2px;
+      }
+
+      li {
+        display: flex;
+        padding: 20px;
+        align-items: flex-start;
+
+        & + li {
+          border-top: 1px solid @grey-d8;
+        }
+      }
+
+      .delete-comment {
+        height: 24px;
+        line-height: 24px;
+        color: @white-ee;
+        background: @red;
+        font-size: 16px;
+        padding: 0 6px;
+        transition: background-color .4s ease;
+        &:hover {
+          background: @red-light;
+        }
+
+        transform: translateY(-3px);
+      }
+
+      .toggle-comment {
+        height: 20px;
+        width: 20px;
+        background: @white-e6;
+        box-shadow: inset 0 0 2px 0 @grey;
+
+        &.active {
+          background: @green;
+        }
+
+        transform: translateY(-2px);
+      }
+
+      .comment-button {
+        max-width: 54px;
+      }
+
+      .comment-content {
+        flex: 1;
+        padding: 0 30px;
+        font-size: 16px;
+        user-select: text;
+
+        &::selection {
+          background: @grey-d8;
+        }
+      }
+    }
+
+    .comment-empty {
+      text-align: center;
+    }
+  }
+
+
+  #comment-edit-panel {
+    width: 500px;
+    min-width: 400px;
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 18px;
+    }
+
+    textarea {
+      resize: none;
+      width: 334px;
+      height: 200px;
+      padding: 16px;
+      font-size: 16px;
+      background: @white-e6;
+      outline: none;
+      border-radius: 6px;
+      border: none;
+    }
+
+    #comment-save {
+      background: @white-e6;
+      color: @grey;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.4s ease;
+      border-radius: 4px;
+      margin-left: 286px;
+      width: 80px;
+      text-align: center;
+      padding: 12px 0;
+
+      &:hover{
+        background: @grey-d8;
+      }
+    }
+  }
+
+
+}

@@ -1,0 +1,69 @@
+@import "../styles/color";
+
+html, body, #options-root{
+  height: 100%;
+  background: @white-ef;
+}
+
+
+#page-frame {
+  padding: 36px 48px 0 348px;
+
+  .page-title {
+    h1 {
+      font-size: 26px;
+      border-left: 4px solid #666;
+      padding-left: 10px;
+    }
+
+    &+div{
+      margin: 30px;
+    }
+  }
+}
+
+#menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  background: @white-f9;
+  color: @black;
+  z-index: 999;
+
+  #page-title {
+    padding: 30px 0;
+
+    h1 {
+      font-size: 36px;
+      letter-spacing: 8px;
+      text-align: center;
+      color: @grey;
+    }
+  }
+
+  #tab-links {
+    border-top: 1px solid @white-e6;
+    border-bottom: 1px solid @white-e6;
+
+    a {
+      text-align: center;
+      padding: 20px;
+      font-size: 18px;
+      letter-spacing: 2px;
+      cursor: pointer;
+      display: block;
+
+      & + a {
+        border-top: 1px solid @white-e6;
+      }
+
+      &:hover,
+      &.active {
+        background: @white-ef;
+      }
+    }
+  }
+}
+

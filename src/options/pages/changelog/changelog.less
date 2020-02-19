@@ -1,0 +1,33 @@
+@import "../../../styles/color";
+
+#changelog-list {
+  font-size: 22px;
+
+  li {
+    margin-top: 28px;
+
+    & > ul {
+      margin-left: 22px;
+      font-size: 16px;
+    }
+
+    ul li {
+      margin-top: 12px;
+    }
+
+    .tag {
+      padding: 0 4px;
+      color: #fff;
+      margin-right: 8px;
+      font-size: 14px;
+
+      &.blue {
+        background: @blue;
+      }
+
+      &.green {
+        background: @green;
+      }
+    }
+  }
+}

@@ -1,0 +1,133 @@
+@import "../../../../styles/color";
+@import "../../../../styles/animate";
+
+#mooc-assistant-evaluator {
+  user-select: none;
+  padding: 24px;
+
+  h2 {
+    font-size: 24px;
+    border-left: 4px solid @grey;
+    line-height: 24px;
+    padding: 0 8px;
+  }
+
+  textarea {
+    resize: none;
+    width: 232px;
+    height: 80px;
+    padding: 8px 12px;
+    font-size: 16px;
+    background: @white-ef;
+    outline: none;
+    border: 2px solid @grey-a7;
+
+    &:disabled {
+      opacity: 0.4;
+    }
+  }
+
+  textarea,
+  input,
+  input::placeholder,
+  input + label {
+    border-radius: 6px;
+  }
+
+  #mooc-assistant-evaluator-panel {
+    padding: 10px;
+
+    & > * {
+      margin-top: 18px;
+    }
+  }
+
+  input[type="checkbox"] {
+    display: none;
+
+    & + label {
+      cursor: pointer;
+      border: 2px solid @grey-d8;
+      background: @white-ef;
+      padding: 4px 12px;
+      color: @grey-a7;
+
+      transition: all 0.4s ease;
+    }
+
+    &:checked + label {
+      border-color: @grey-a7;
+      color: @grey;
+    }
+  }
+
+  #mooc-assistant-evaluator-config {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #mooc-assistant-evaluator-frequency {
+    width: 80px;
+  }
+
+  .number-input {
+    position: relative;
+
+    & label {
+      position: absolute;
+      font-size: 14px;
+      color: @grey;
+      line-height: 30px;
+      right: 10px;
+    }
+
+    & input {
+      border: 2px solid @grey-a7;
+      padding: 0 10px;
+      height: 30px;
+      background: @white-ef;
+
+      -moz-appearance: textfield;
+
+      &::selection {
+        background: @grey-d8;
+      }
+
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
+    }
+  }
+
+
+  #mooc-assistant-evaluator-controller {
+    display: flex;
+    justify-content: space-between;
+
+    & > span {
+      cursor: pointer;
+      font-size: 14px;
+      padding: 4px 14px;
+      border-radius: 4px;
+      color: @white-ef;
+      background: @grey;
+      transition: opacity .4s ease;
+
+      &:last-child {
+        background: @white-e6;
+        color: @grey;
+
+      }
+
+      &:hover{
+        opacity: .8;
+      }
+
+      &.shake{
+        animation: shake .4s;
+      }
+    }
+  }
+}
