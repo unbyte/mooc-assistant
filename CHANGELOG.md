@@ -7,4 +7,4 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Features
 
-* add automatic evaluation ([1c393d6](https://github.com/unbyte/mooc-assistant/commit/1c393d6e84f1b0610909eb777976f5095d1f7c6d))
+* add automatic evaluation ([2c489cf](https://github.com/unbyte/mooc-assistant/commit/2c489cfa65b39a7cdbf11ee039d341dea50a6081))
