@@ -1,5 +1,5 @@
 import {clearEchoed, echo} from "../console/Console";
-import {CommentItem, extractConfig, getStorage} from "../../../../utils/storage";
+import {CommentItem, getConfig} from "../../../../utils/storage";
 
 enum ValidateFailReason {
   TIMES_OUT_OF_BOUND = "份数应当在 1 ~ 30 之间",
@@ -150,7 +150,7 @@ export class EvaluatorWorker {
   }
 
   private static async getCommentList(): Promise<void> {
-    this.commentList = extractConfig(await getStorage()).commentList.filter(
+    this.commentList = (await getConfig()).commentList.filter(
       i => i.active
     );
   }
