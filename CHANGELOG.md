@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/unbyte/mooc-assistant/compare/v2.0.1...v2.1.0) (2020-02-25)
+
+
+### Features
+
+* add support for `ulearning` ([04ca2ba](https://github.com/unbyte/mooc-assistant/commit/04ca2ba34eb7142fd780fb78e8a5d8af213c19d3))
+
+
+### Bug Fixes
+
+* **evaluator.less:** fix dislocation of inputs in Firefox ([7410669](https://github.com/unbyte/mooc-assistant/commit/741066925ee46311a98958644319b62e6c40a5e9))
+
 ### [2.0.1](https://github.com/unbyte/mooc-assistant/compare/v2.0.0...v2.0.1) (2020-02-20)
 
 
