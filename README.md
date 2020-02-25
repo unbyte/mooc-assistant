@@ -2,13 +2,16 @@
 <p align="center"> <img alt="Release" src="https://img.shields.io/github/v/release/unbyte/mooc-assistant?style=flat-square"/> </p>
 <p align="center"> <img alt="Stars" src="https://img.shields.io/chrome-web-store/stars/oebggekgendmoeedkkdkdcdbmfbfeldc?style=flat-square"/> <img alt="Users" src="https://img.shields.io/chrome-web-store/users/oebggekgendmoeedkkdkdcdbmfbfeldc?style=flat-square"/> <img alt="Stars" src="https://img.shields.io/amo/stars/mooc-assistant?style=flat-square"/> <img alt="Users" src="https://img.shields.io/amo/users/mooc-assistant?style=flat-square"/></p>
 
-
 # 目录
 
 - [简介](#简介)
 - [下载](#下载)
-- [自动互评](#自动互评)
-  - [设置备选随机评语](#设置备选随机评语)
+- [中国大学MOOC](#中国大学MOOC)
+  - [自动互评](#自动互评)
+    - [设置备选随机评语](#设置备选随机评语)
+- [优学堂](#优学堂)
+  - [习题答案](#习题答案)
+  - [倍速播放](#倍速播放)
 - [更新日志](#更新日志)
 - [开源协议](#开源协议)
 
@@ -39,7 +42,11 @@ Chrome, Firefox, Opera 以及其他国产Chromium套壳浏览器均可使用。
 
 <br/>
 
-# 自动互评
+
+
+# 中国大学MOOC
+
+## 自动互评
 
 安装本插件并启用后，访问[中国大学mooc](https://www.icourse163.org/)时，页面右侧边会悬浮`慕课助手`。
 
@@ -57,7 +64,7 @@ Chrome, Firefox, Opera 以及其他国产Chromium套壳浏览器均可使用。
 
 <br/>
 
-## 设置备选随机评语
+### 设置备选随机评语
 
 若开启随机评语，则在互评时随机使用预先设置好的评语。
 
@@ -71,13 +78,46 @@ Chrome, Firefox, Opera 以及其他国产Chromium套壳浏览器均可使用。
 
 <p align="center"><img alt="配置页面示意图" src="https://i.loli.net/2020/02/19/ZXmTRDG91A4rFkt.png"/></p>
 
+<br/>
 
+# 优学堂
+
+## 习题答案
+
+安装本插件并启用后，访问 优学堂学习界面 `https://ua.ulearning.cn/learnCourse/***` 时，页面顶部`咨询客服`旁会出现`习题答案`菜单。
+
+<p align="center"><img src="https://i.loli.net/2020/02/25/ADOrWThdzwEFi18.png"/></p>
+
+点击`获取答案`，会将答案显示在习题右方:
+
+<p align="center"><img src="https://i.loli.net/2020/02/25/fFwZoEBx73t6enh.png"/></p>
+
+<br/>
+
+## 倍速播放
+
+安装本插件并启用后，访问 优学堂学习界面 `https://ua.ulearning.cn/learnCourse/***` 时，页面顶部`咨询客服`旁会出现`视频播放`菜单。
+
+<p align="center"><img src="https://i.loli.net/2020/02/25/j257J6B4S1VdQbp.png"/></p>
+
+在视频播放的页面，先输入倍速，再点击倍速播放即可开始播放
+
+> 受浏览器限制，最大为16倍速，且超过一定倍速会浏览器会自动静音视频
+
+<br/>
 
 # 更新日志
 
+详细开发更新日志请参阅: [CHANGELOG.md](https://github.com/unbyte/mooc-assistant/blob/master/CHANGELOG.md)
+
+<br/>
+
+- v2.1.0
+  - 支持 优学堂 获取习题答案
+  - 支持 优学堂 倍速播放
 - v2.0.0
-  - 支持自动互评
-  - 支持随机评语
+  - 支持 中国大学MOOC 自动互评
+  - 支持 中国大学MOOC 随机评语
 
 <br/>
 
