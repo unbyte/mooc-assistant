@@ -28,7 +28,7 @@ const Content: React.FC = () => {
           title="前往Opera扩展商店"
           target="_blank"
         >
-          Mooc
+          Mooc Assistant
         </a>
       </p>
       <p>
@@ -38,7 +38,7 @@ const Content: React.FC = () => {
           title="前往Firefox扩展商店"
           target="_blank"
         >
-          Mooc
+          Mooc Assistant
         </a>
       </p>
       <p>
@@ -48,7 +48,7 @@ const Content: React.FC = () => {
           title="前往Chrome扩展商店"
           target="_blank"
         >
-          MoocAssistant
+          Mooc Assistant
         </a>
       </p>
       <br />

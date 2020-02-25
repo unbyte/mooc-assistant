@@ -1,0 +1,45 @@
+@import "../../styles/color";
+
+#mooc-assistant {
+  position: absolute;
+  right: 100px;
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#mooc-assistant > div {
+  cursor: pointer;
+  padding: 0;
+  width: 88px;
+  text-align: center;
+
+  & > span {
+    display: inline-block;
+    width: 100%;
+  }
+
+  & > ul {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+
+    & > li {
+      transition: .4s ease background-color;
+
+      &:hover {
+        background: @white-f9;
+      }
+    }
+  }
+
+  &:hover ul {
+    display: block;
+    border: 1px solid #d1d8e2;
+    border-top: 0;
+    background: #fff;
+  }
+}

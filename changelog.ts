@@ -15,15 +15,28 @@ interface ChangelogFormat {
 
 export default <ChangelogFormat[]>[
   {
+    version: "2.1.0",
+    details: [
+      {
+        tag: Tag.ADD_FEAT,
+        text: "支持 优学堂 获取练习答案"
+      },
+      {
+        tag: Tag.ADD_FEAT,
+        text: "支持 优学堂 倍速播放"
+      },
+    ]
+  },
+  {
     version: "2.0.0",
     details: [
       {
         tag: Tag.ADD_FEAT,
-        text: "支持自动互评"
+        text: "支持 中国大学MOOC 自动互评"
       },
       {
         tag: Tag.ADD_FEAT,
-        text: "支持随机评语"
+        text: "支持 中国大学MOOC 随机评语"
       },
     ]
   },

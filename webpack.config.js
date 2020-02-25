@@ -55,6 +55,7 @@ module.exports = {
   entry: {
     background: path.join(sourcePath, "background", "index.ts"),
     content_netease: path.join(sourcePath, "content", "netease", "index.tsx"),
+    content_ulearning: path.join(sourcePath, "content", "ulearning", "index.tsx"),
     options: path.join(sourcePath, "options", "index.tsx")
   },
 
