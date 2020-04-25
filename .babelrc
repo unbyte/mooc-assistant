@@ -3,6 +3,8 @@
     [
       "@babel/preset-env",
       {
+        "useBuiltIns": "entry",
+        "modules": false,
         "targets": {
           "chrome": "49",
           "firefox": "52",
@@ -10,9 +12,12 @@
           "edge": "79"
         }
       }
-    ]
+    ],
+    "@babel/typescript",
+    "@babel/react"
   ],
   "plugins": [
+    ["@babel/plugin-proposal-class-properties"],
     ["@babel/plugin-transform-destructuring", { "useBuiltIns": true }],
     ["@babel/plugin-proposal-object-rest-spread", { "useBuiltIns": true }],
     [

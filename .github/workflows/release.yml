@@ -24,6 +24,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: |
+            extension/chrome.crx
             extension/chrome.zip
             extension/firefox.xpi
             extension/opera.crx

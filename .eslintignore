@@ -1,5 +1,5 @@
 .idea/
-.awcache/
 node_modules/
 dist/
 extension/
+*.js
