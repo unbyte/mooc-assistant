@@ -24,7 +24,7 @@ export class EvaluatorWorker {
   private static random: boolean;
   private static comment: string;
   private static commentList: CommentItem[];
-  private static stopCallback: ()=>void;
+  private static stopCallback: () => void;
 
   // 返回一个bool表示是否正常开始了任务
   public static async run(
@@ -33,7 +33,7 @@ export class EvaluatorWorker {
     random: boolean,
     comment: string,
     startCallback: (result: boolean) => void,
-    stopCallback:()=>void,
+    stopCallback: () => void,
   ): Promise<void> {
     this.times = times;
     this.frequency = frequency * 1000;
@@ -83,7 +83,7 @@ export class EvaluatorWorker {
       ".s"
     );
     const commentInputs: NodeListOf<HTMLTextAreaElement> = document.querySelectorAll(
-      ".j-textarea"
+      "textarea.j-textarea"
     );
     const submitButton: HTMLInputElement | null = document.querySelector(
       ".j-submitbtn"
@@ -182,4 +182,5 @@ export class EvaluatorWorker {
     }
     return true;
   }
+
 }
