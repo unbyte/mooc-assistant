@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.1.1](https://github.com/unbyte/mooc-assistant/compare/v2.1.0...v2.1.1) (2020-05-20)
+
+
+### Bug Fixes
+
+* misplacement of buttons and inputs ([9f4cca5](https://github.com/unbyte/mooc-assistant/commit/9f4cca57df7c802e62c1658351b1eeb73f5333bc))
+
 ## [2.1.0](https://github.com/unbyte/mooc-assistant/compare/v2.0.1...v2.1.0) (2020-02-25)
 
 
