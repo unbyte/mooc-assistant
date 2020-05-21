@@ -1,9 +1,8 @@
 import TabItems from "./router";
-import {HashRouter, NavLink, Route} from "react-router-dom";
+import { HashRouter, NavLink, Route } from "react-router-dom";
 import React from "react";
 import "./options.less";
 import "../styles/base.less";
-
 
 const Menu: React.FC = () => (
   <div id="menu">
@@ -38,14 +37,19 @@ function TitleWrapper<T>(Page: React.ComponentType<T>, pageTitle: string) {
       </div>
       <Page {...props} />
     </div>
-  )
+  );
 }
 
 const PageFrame: React.FC = () => {
   return (
     <div id="page-frame">
       {TabItems.map((item, i) => (
-        <Route exact path={item.route} component={TitleWrapper(item.component, item.label)} key={i}/>
+        <Route
+          exact
+          path={item.route}
+          component={TitleWrapper(item.component, item.label)}
+          key={i}
+        />
       ))}
     </div>
   );

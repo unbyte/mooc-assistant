@@ -20,7 +20,7 @@ export default <ChangelogFormat[]>[
       {
         tag: Tag.FIX_OPT,
         text: "修复 中国大学MOOC 表单与按钮错位"
-      },
+      }
     ]
   },
   {
@@ -33,7 +33,7 @@ export default <ChangelogFormat[]>[
       {
         tag: Tag.ADD_FEAT,
         text: "支持 优学堂 倍速播放"
-      },
+      }
     ]
   },
   {
@@ -46,7 +46,7 @@ export default <ChangelogFormat[]>[
       {
         tag: Tag.ADD_FEAT,
         text: "支持 中国大学MOOC 随机评语"
-      },
+      }
     ]
-  },
+  }
 ];

@@ -10,7 +10,7 @@ interface ConfigInterface {
 }
 
 const EMPTY_CONFIG: ConfigInterface = {
-  commentList: [],
+  commentList: []
 };
 
 export const saveConfig: (
@@ -21,8 +21,7 @@ export const saveConfig: (
   });
 
 export const getStorage: () => Promise<{ [s: string]: any }> = async () =>
-  browser.storage.sync.get({config: EMPTY_CONFIG});
+  browser.storage.sync.get({ config: EMPTY_CONFIG });
 
-
-export const getConfig: () => Promise<ConfigInterface> = async ()=>
+export const getConfig: () => Promise<ConfigInterface> = async () =>
   (await getStorage()).config;

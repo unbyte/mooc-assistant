@@ -1,7 +1,7 @@
 import About from "./pages/about/About";
 import Changelog from "./pages/changelog/Changelog";
 import Comments from "./pages/comments/Comments";
-import {FunctionComponent} from "react";
+import { FunctionComponent } from "react";
 
 interface TabItem {
   label: string;

@@ -4,9 +4,7 @@ import "./answer.less";
 export const Answer: React.FC = () => {
   return (
     <div>
-      <span>
-        习题答案
-      </span>
+      <span>习题答案</span>
       <ul>
         <li onClick={fetchAnswers}>获取答案</li>
         <li onClick={clearAnswers}>隐藏答案</li>

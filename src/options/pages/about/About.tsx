@@ -1,5 +1,5 @@
 import React from "react";
-import "./about.less"
+import "./about.less";
 
 const About: React.FC = () => <Content />;
 
@@ -17,9 +17,7 @@ const Content: React.FC = () => {
       <p>
         转眼快一年没搭理过这个插件了，如今(2020.2.18)翻出来改写，希望能让大家有更好的体验
       </p>
-      <p>
-        有空会针对各个慕课平台增加新功能，欢迎提出宝贵建议
-      </p>
+      <p>有空会针对各个慕课平台增加新功能，欢迎提出宝贵建议</p>
       <br />
       <p>
         Opera商店:{" "}

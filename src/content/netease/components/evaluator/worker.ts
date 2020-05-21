@@ -1,5 +1,5 @@
-import {clearEchoed, echo} from "../console/Console";
-import {CommentItem, getConfig} from "../../../../utils/storage";
+import { clearEchoed, echo } from "../console/Console";
+import { CommentItem, getConfig } from "../../../../utils/storage";
 
 enum ValidateFailReason {
   TIMES_OUT_OF_BOUND = "份数应当在 1 ~ 30 之间",
@@ -33,7 +33,7 @@ export class EvaluatorWorker {
     random: boolean,
     comment: string,
     startCallback: (result: boolean) => void,
-    stopCallback: () => void,
+    stopCallback: () => void
   ): Promise<void> {
     this.times = times;
     this.frequency = frequency * 1000;
@@ -150,9 +150,7 @@ export class EvaluatorWorker {
   }
 
   private static async getCommentList(): Promise<void> {
-    this.commentList = (await getConfig()).commentList.filter(
-      i => i.active
-    );
+    this.commentList = (await getConfig()).commentList.filter(i => i.active);
   }
 
   private static validateNums(times: number, frequency: number): boolean {
@@ -182,5 +180,4 @@ export class EvaluatorWorker {
     }
     return true;
   }
-
 }

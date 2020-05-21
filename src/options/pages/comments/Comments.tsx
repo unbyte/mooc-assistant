@@ -1,19 +1,19 @@
-import React, {useEffect, useState} from "react";
-import {CommentItem, getConfig, saveConfig} from "../../../utils/storage";
-import {CommentList, EditPanel} from "./Component";
+import React, { useEffect, useState } from "react";
+import { CommentItem, getConfig, saveConfig } from "../../../utils/storage";
+import { CommentList, EditPanel } from "./Component";
 import "./comments.less";
 
 const Comments: React.FC = () => {
-  let [comments, setComments] = useState<CommentItem[]>([]);
+  const [comments, setComments] = useState<CommentItem[]>([]);
 
   useEffect(() => {
-    getConfig().then(({commentList}) => {
+    getConfig().then(({ commentList }) => {
       setComments(commentList);
     });
   }, []);
 
   useEffect(() => {
-    saveConfig({commentList: comments}).then();
+    saveConfig({ commentList: comments }).then();
   }, [comments]);
 
   return (
@@ -21,7 +21,7 @@ const Comments: React.FC = () => {
       <EditPanel
         addComment={content =>
           setComments(prevState => [
-            {text: content, active: true},
+            { text: content, active: true },
             ...prevState
           ])
         }

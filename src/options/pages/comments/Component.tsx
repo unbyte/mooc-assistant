@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import {CommentItem} from "../../../utils/storage";
+import { CommentItem } from "../../../utils/storage";
 
 interface EditPanelProps {
   addComment: (content: string) => void;

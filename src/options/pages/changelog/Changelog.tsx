@@ -1,11 +1,10 @@
 import React from "react";
-import changelog, {Tag} from "../../../../changelog";
+import changelog, { Tag } from "../../../../changelog";
 import "./changelog.less";
 
 const Changelog: React.FC = () => <ChangelogList />;
 
-
-function tagToStyleClass(tag:string):string{
+function tagToStyleClass(tag: string): string {
   return tag === Tag.FIX_OPT ? "green" : "blue";
 }
 
@@ -32,6 +31,5 @@ const ChangelogList: React.FC = () => {
     </div>
   );
 };
-
 
 export default Changelog;

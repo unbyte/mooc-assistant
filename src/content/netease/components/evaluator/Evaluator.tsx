@@ -1,8 +1,8 @@
-import React, {RefObject, useRef, useState} from "react";
+import React, { RefObject, useRef, useState } from "react";
 import "./evaluator.less";
-import {openOptionsFromContent} from "../../../../utils/runtime";
-import {EvaluatorWorker} from "./worker";
-import {NumberInput} from "../../../../components/NumberInput";
+import { openOptionsFromContent } from "../../../../utils/runtime";
+import { EvaluatorWorker } from "./worker";
+import { NumberInput } from "../../../../components/NumberInput";
 
 interface ControllerProps {
   comment: RefObject<HTMLTextAreaElement>;
@@ -116,7 +116,7 @@ const WorkButton: React.FC<ControllerProps> = ({
                   );
                 }
               },
-          () => setFlag(false)
+              () => setFlag(false)
             )
       }
       ref={refWorkButton}

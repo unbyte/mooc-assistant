@@ -1,6 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 
-import {Options} from "./Options";
+import { Options } from "./Options";
 
-ReactDOM.render(<Options />, document.getElementById('options-root'));
+ReactDOM.render(<Options />, document.getElementById("options-root"));
