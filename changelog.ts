@@ -15,6 +15,15 @@ interface ChangelogFormat {
 
 export default <ChangelogFormat[]>[
   {
+    version: "2.1.1",
+    details: [
+      {
+        tag: Tag.FIX_OPT,
+        text: "修复 中国大学MOOC 表单与按钮错位"
+      },
+    ]
+  },
+  {
     version: "2.1.0",
     details: [
       {
