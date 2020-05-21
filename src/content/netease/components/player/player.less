@@ -1,0 +1,49 @@
+@import "../../../../styles/color";
+
+#mooc-assistant-player {
+  user-select: none;
+  padding: 24px;
+
+  h2 {
+    font-size: 24px;
+    border-left: 4px solid @grey;
+    line-height: 24px;
+    padding: 0 8px;
+  }
+
+  #mooc-assistant-player-panel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 12px;
+  }
+
+  #mooc-assistant-player-controller {
+    display: inline-block;
+
+    & > span {
+      cursor: pointer;
+      font-size: 14px;
+      padding: 4px 14px;
+      border-radius: 4px;
+      color: @white-ef;
+      background: @grey;
+      transition: opacity .4s ease;
+
+      &:first-child{
+        margin-right: 10px;
+      }
+
+      &:last-child {
+        background: @white-e6;
+        color: @grey;
+      }
+
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+}

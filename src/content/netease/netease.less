@@ -92,4 +92,62 @@
     font-family: "lucida grande", "lucida sans unicode", lucida, helvetica,
     "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   }
+
+  .number-input {
+    position: relative;
+
+    & label {
+      position: absolute;
+      font-size: 14px;
+      color: @grey;
+      line-height: 30px;
+      right: 10px;
+    }
+
+    & input {
+      width: 50px;
+      border: 2px solid @grey-a7;
+      padding: 0 10px;
+      height: 26px;
+      background: @white-ef;
+
+      -moz-appearance: textfield;
+
+      &::selection {
+        background: @grey-d8;
+      }
+
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
+    }
+  }
+
+  textarea,
+  input,
+  input::placeholder,
+  input + label {
+    border-radius: 6px;
+  }
+
+
+  input[type="checkbox"] {
+    display: none;
+
+    & + label {
+      cursor: pointer;
+      border: 2px solid @grey-d8;
+      background: @white-ef;
+      padding: 4px 12px;
+      color: @grey-a7;
+
+      transition: all 0.4s ease;
+    }
+
+    &:checked + label {
+      border-color: @grey-a7;
+      color: @grey;
+    }
+  }
 }

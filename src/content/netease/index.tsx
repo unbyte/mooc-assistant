@@ -1,11 +1,14 @@
 import ReactDOM from "react-dom";
-import React, {useRef} from "react";
+import React, { useRef } from "react";
 import "./netease.less";
-import {Evaluator} from "./components/evaluator/Evaluator";
-import {Console} from "./components/console/Console";
+import { Evaluator } from "./components/evaluator/Evaluator";
+import { Console } from "./components/console/Console";
+import { Player } from "./components/player/Player";
 
-document.body.insertAdjacentHTML("afterbegin", "<div id='mooc-assistant-mount'></div>");
-
+document.body.insertAdjacentHTML(
+  "afterbegin",
+  "<div id='mooc-assistant-mount'></div>"
+);
 
 interface ToggleProps {
   toggle: () => void;
@@ -13,7 +16,11 @@ interface ToggleProps {
 
 export const Toggle: React.FC<ToggleProps> = props => {
   return (
-    <div id="mooc-assistant-toggle" onClick={props.toggle} title="展开/收起慕课助手">
+    <div
+      id="mooc-assistant-toggle"
+      onClick={props.toggle}
+      title="展开/收起慕课助手"
+    >
       <span>慕课助手</span>
     </div>
   );
@@ -22,22 +29,22 @@ export const Toggle: React.FC<ToggleProps> = props => {
 export const Body: React.FC = () => {
   return (
     <div id="mooc-assistant-body">
-      <Evaluator/>
+      <Evaluator />
+      <Player />
     </div>
   );
 };
-
 
 const App: React.FC = () => {
   const mainRef = useRef<HTMLDivElement>(null);
 
   return (
     <div id="mooc-assistant" ref={mainRef}>
-      <Toggle toggle={() => mainRef.current!.classList.toggle('show')}/>
-      <Body/>
-      <Console/>
+      <Toggle toggle={() => mainRef.current!.classList.toggle("show")} />
+      <Body />
+      <Console />
     </div>
-  )
+  );
 };
 
-ReactDOM.render(<App/>, document.getElementById('mooc-assistant-mount'));
+ReactDOM.render(<App />, document.getElementById("mooc-assistant-mount"));
