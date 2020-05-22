@@ -36,7 +36,6 @@ Chrome, Firefox, Opera 以及其他国产Chromium套壳浏览器均可使用。
 
 - [Chrome商店](https://chrome.google.com/webstore/detail/moocassistant/oebggekgendmoeedkkdkdcdbmfbfeldc)
 - [Firefox商店](https://addons.mozilla.org/zh-CN/firefox/addon/mooc-assistant/)
-- [Opera商店](https://addons.opera.com/zh-cn/extensions/details/mooc-assistant/)
 
 若官方商店有访问困难，可以前往本仓库[Release页面](https://github.com/unbyte/mooc-assistant/releases)下载并手动安装
 

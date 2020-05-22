@@ -20,16 +20,6 @@ const Content: React.FC = () => {
       <p>有空会针对各个慕课平台增加新功能，欢迎提出宝贵建议</p>
       <br />
       <p>
-        Opera商店:{" "}
-        <a
-          href="https://addons.opera.com/zh-cn/extensions/details/mooc-assistant/"
-          title="前往Opera扩展商店"
-          target="_blank"
-        >
-          Mooc Assistant
-        </a>
-      </p>
-      <p>
         Firefox商店:{" "}
         <a
           href="https://addons.mozilla.org/zh-CN/firefox/addon/mooc-assistant/"
