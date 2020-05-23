@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.0](https://github.com/unbyte/mooc-assistant/compare/v2.1.1...v2.2.0) (2020-05-23)
+
+
+### Features
+
+* add `marker` for `mooc` ([d4f49da](https://github.com/unbyte/mooc-assistant/commit/d4f49da4520cfac09d53641bfcb480b5ce9086ec))
+* set play rate in `mooc` ([22b7034](https://github.com/unbyte/mooc-assistant/commit/22b70344cf67608aac7db4f83dff3f1648b73895))
+
+
+### Bug Fixes
+
+* console box overflow ([9fdf4ca](https://github.com/unbyte/mooc-assistant/commit/9fdf4ca5cfcd644e523c539e4923a64ee44df519))
+
 ### [2.1.1](https://github.com/unbyte/mooc-assistant/compare/v2.1.0...v2.1.1) (2020-05-20)
 
 
