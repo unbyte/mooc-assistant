@@ -11,8 +11,11 @@ interface CommentListProps {
   toggleActive: (index: number) => void;
 }
 
-export const CommentList: React.FC<CommentListProps> = props => {
-  const { comments, remove, toggleActive } = props;
+export const CommentList: React.FC<CommentListProps> = ({
+  comments,
+  remove,
+  toggleActive
+}) => {
   return (
     <div id="comment-list">
       <h2>
@@ -53,7 +56,7 @@ export const CommentList: React.FC<CommentListProps> = props => {
   );
 };
 
-export const EditPanel: React.FC<EditPanelProps> = props => {
+export const EditPanel: React.FC<EditPanelProps> = ({ addComment }) => {
   const content = useRef<HTMLTextAreaElement>(null);
   return (
     <div id="comment-edit-panel">
@@ -63,7 +66,7 @@ export const EditPanel: React.FC<EditPanelProps> = props => {
         <div
           id="comment-save"
           onClick={() => {
-            props.addComment(content.current!.value);
+            addComment(content.current!.value);
             content.current!.value = "";
           }}
         >

@@ -29,6 +29,7 @@
   },
   "include": [
     "changelog",
+    "features",
     "src/**/*"
   ],
   "exclude": ["node_modules"]

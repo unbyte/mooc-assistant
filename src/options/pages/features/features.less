@@ -1,0 +1,59 @@
+@import "../../../styles/color";
+
+#features-page {
+
+  #features-tip {
+    letter-spacing: 2px;
+    line-height: 24px;
+    font-size: 16px;
+  }
+
+  #features-panel {
+    margin-top: 36px;
+
+    ul {
+      margin-top: 20px;
+
+      li {
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+
+        span {
+          display: inline-block;
+          margin-right: 30px;
+        }
+
+        .toggle-feature {
+          height: 20px;
+          min-width: 20px;
+          background: @white-e6;
+          box-shadow: inset 0 0 2px 0 @grey;
+          cursor: pointer;
+
+          &.active {
+            background: @green;
+          }
+        }
+
+        .feature-name {
+          width: 180px;
+        }
+
+        .feature-platform {
+          width: 120px;
+        }
+
+        .feature-description {
+          color: #888;
+        }
+      }
+    }
+
+  }
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 18px;
+  }
+}

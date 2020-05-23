@@ -15,6 +15,19 @@ interface ChangelogFormat {
 
 export default <ChangelogFormat[]>[
   {
+    version: "2.2.0",
+    details: [
+      {
+        tag: Tag.ADD_FEAT,
+        text: "支持 中国大学MOOC 视频倍速播放"
+      },
+      {
+        tag: Tag.ADD_FEAT,
+        text: "支持 中国大学MOOC 秒刷学习进度"
+      }
+    ]
+  },
+  {
     version: "2.1.1",
     details: [
       {

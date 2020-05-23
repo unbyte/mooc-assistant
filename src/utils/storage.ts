@@ -1,4 +1,5 @@
 import { browser, Storage } from "webextension-polyfill-ts";
+import { FeatureStatusList } from "../../features";
 
 export interface CommentItem {
   text: string;
@@ -7,21 +8,22 @@ export interface CommentItem {
 
 interface ConfigInterface {
   commentList: CommentItem[];
+
+  // 功能名称 => 是否开启
+  featureStatus: FeatureStatusList;
 }
 
 const EMPTY_CONFIG: ConfigInterface = {
-  commentList: []
+  commentList: [],
+  featureStatus: {}
 };
 
 export const saveConfig: (
-  config: Storage.StorageAreaSetItemsType
-) => Promise<void> = config =>
-  browser.storage.sync.set({
-    config
-  });
+  patch: Storage.StorageAreaSetItemsType
+) => Promise<void> = patch => browser.storage.sync.set(patch);
 
 export const getStorage: () => Promise<{ [s: string]: any }> = async () =>
-  browser.storage.sync.get({ config: EMPTY_CONFIG });
+  browser.storage.sync.get(EMPTY_CONFIG);
 
 export const getConfig: () => Promise<ConfigInterface> = async () =>
-  (await getStorage()).config;
+  (await getStorage()) as ConfigInterface;
