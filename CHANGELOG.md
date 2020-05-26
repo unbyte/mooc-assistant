@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.2.1](https://github.com/unbyte/mooc-assistant/compare/v2.2.0...v2.2.1) (2020-05-26)
+
+
+### Bug Fixes
+
+* anti `anti scripts` mechanism ([1bc8fcb](https://github.com/unbyte/mooc-assistant/commit/1bc8fcb6fc70ba360406263b8a6fbc304ad17a1e))
+
 ## [2.2.0](https://github.com/unbyte/mooc-assistant/compare/v2.1.1...v2.2.0) (2020-05-23)
 
 
