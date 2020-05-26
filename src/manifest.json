@@ -42,7 +42,8 @@
       ],
       "css": [
         "css/content_netease.css"
-      ]
+      ],
+      "run_at": "document_start"
     },
     {
       "matches": [
